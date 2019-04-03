@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FFmpeg.Nightly.LGPL</id>
-    <version>20190402.0.0</version>
+    <version>20190327.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OLD_VERSION=`sed -n 's|[$]version = "\(.*\)"|\1|p' install.ps1`-`sed -n 's|[$]hash = "\(.*\)"|\1|p' install.ps1`
+OLD_VERSION=`sed -n 's|[$]ffmpeg = "ffmpeg-\(.*\)"|\1|p' install.ps1`
 NEW_VERSION=`curl -L https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases/latest | grep -Po '<a href="/mcmtroffaes/ffmpeg-msvc-build/releases/download/[0-9.]+/ffmpeg-\K[0-9.]+-[a-z0-9]+' | head -n 1`
 
 if [ "$OLD_VERSION" == "$NEW_VERSION" ] && [ "$1" != "--force" ]

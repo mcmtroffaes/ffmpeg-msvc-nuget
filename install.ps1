@@ -1,6 +1,5 @@
-$version = "20190327.0.1"
-$hash = "681957b8"
-$ffmpeg = "ffmpeg-$version-$hash"
+$ffmpeg = "ffmpeg-20190327.0.1-681957b8"
+$version = ($ffmpeg -split '-')[1]
 $static32 = "$ffmpeg-lgpl21-v141-static-md-release-x86"
 $static64 = "$ffmpeg-lgpl21-v141-static-md-release-x64"
 $wc = New-Object System.Net.WebClient
