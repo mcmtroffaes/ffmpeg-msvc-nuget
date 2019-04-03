@@ -31,7 +31,7 @@
 
 #include <libavformat/avformat.h>
 #include <libavutil/opt.h>
-#include <unistd.h>
+#include <io.h>
 
 static void process_client(AVIOContext *client, const char *in_uri)
 {
