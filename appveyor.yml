@@ -2,7 +2,7 @@ version: 1.0.{build}
 install:
   - ps: .\install.ps1
 build_script:
-  - nuget pack FFmpeg.Nightly.nuspec
+  - nuget pack FFmpeg.Nightly.LGPL.nuspec
   - ps: Get-ChildItem . *.nupkg | foreach { & nuget add $_ -Source localfeed }
   - ps: Push-Location test
   - nuget restore -Source "%cd%\..\localfeed"

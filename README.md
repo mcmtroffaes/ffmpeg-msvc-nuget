@@ -10,11 +10,11 @@ A nuget package containing headers, import libraries, and runtime dlls for FFmpe
 
 ## Usage
 
-A prebuilt nuget package can be found [here](https://www.nuget.org/packages/FFmpeg.Nightly/). If you want to build your own nuget package, then:
+A prebuilt nuget package can be found [here](https://www.nuget.org/packages/FFmpeg.Nightly.LGPL/). If you want to build your own nuget package, then:
 
   * Use ``install.ps1`` to download and extract the relevant FFmpeg dev and shared builds for both 32 bit and 64 bit.
   * Use ``build.ps1`` to regenerate the lib files using Visual Studio 14.0 tools.
-  * Use ``nuget pack FFmpeg.Nightly.nuspec`` to create the nuget package.
+  * Use ``nuget pack FFmpeg.Nightly.LGPL.nuspec`` to create the nuget package.
 
 ## License
 

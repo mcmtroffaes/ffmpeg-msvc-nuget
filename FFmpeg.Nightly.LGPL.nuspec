@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>FFmpeg.Nightly</id>
+    <id>FFmpeg.Nightly.LGPL</id>
     <version>20190402.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
@@ -16,7 +16,7 @@
   </metadata>
   <files>
     <file src="nuget-readme.txt" target="readme.txt" />
-    <file src="FFmpeg.Nightly.targets" target="build\native" />
+    <file src="FFmpeg.Nightly.LGPL.targets" target="build\native" />
     <file src="ffmpeg-20190402-6aeaac3-win32-dev\include\**" target="build\native\include" />
     <file src="ffmpeg-20190402-6aeaac3-win32-dev\LICENSE.txt" target="build\native\share\doc\ffmpeg-windows-build-license.txt" />
     <file src="ffmpeg-20190402-6aeaac3-win32-dev\README.txt" target="build\native\share\doc\ffmpeg-windows-build-readme.txt" />
