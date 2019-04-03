@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>FFmpeg.Nightly</id>
+    <version>20190402.0.0</version>
+    <authors>FFmpeg</authors>
+    <owners>Matthias C. M. Troffaes</owners>
+    <projectUrl>https://ffmpeg.org/</projectUrl>
+    <licenseUrl>https://ffmpeg.org/legal.html</licenseUrl>
+    <iconUrl>https://ffmpeg.org/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Headers, import libraries, and runtime dlls for FFmpeg, based on the official FFmpeg windows builds.</description>
+    <summary>Headers, import libraries, and runtime dlls for FFmpeg.</summary>
+    <releaseNotes>See https://git.ffmpeg.org/gitweb/ffmpeg.git/log/6aeaac3 for a full list of changes. All files are directly taken from the official FFmpeg windows builds at https://ffmpeg.zeranoe.com/builds/. However, to ensure support for MSVC's /DELAYLOAD, the import libraries have been regenerated using MSVC tools. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-nuget on GitHub.</releaseNotes>
+    <tags>ffmpeg media video audio capture encode decode encoding decoding codec native nativepackage</tags>
+  </metadata>
+  <files>
+    <file src="nuget-readme.txt" target="readme.txt" />
+    <file src="FFmpeg.Nightly.targets" target="build\native" />
+    <file src="ffmpeg-20190402-6aeaac3-win32-dev\include\**" target="build\native\include" />
+    <file src="ffmpeg-20190402-6aeaac3-win32-dev\LICENSE.txt" target="build\native\share\doc\ffmpeg-windows-build-license.txt" />
+    <file src="ffmpeg-20190402-6aeaac3-win32-dev\README.txt" target="build\native\share\doc\ffmpeg-windows-build-readme.txt" />
+    <file src="ffmpeg-20190402-6aeaac3-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
+    <file src="ffmpeg-20190402-6aeaac3-win64-dev\lib\*.lib" target="build\native\lib\x64" />
+    <file src="ffmpeg-20190402-6aeaac3-win32-shared\bin\*.dll" target="build\native\bin\Win32" />
+    <file src="ffmpeg-20190402-6aeaac3-win64-shared\bin\*.dll" target="build\native\bin\x64" />
+  </files>
+</package>
