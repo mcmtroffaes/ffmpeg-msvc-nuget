@@ -6,20 +6,10 @@ build_script:
   - ps: Get-ChildItem . *.nupkg | foreach { & nuget add $_ -Source localfeed }
   - ps: Push-Location test
   - nuget restore -Source "%cd%\..\localfeed"
-  - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
-  - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
   - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
   - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
   - ps: Pop-Location
 test_script:
-  - ps: |
-      Push-Location test\Release
-      ..\test.ps1
-      Pop-Location
-  - ps: |
-      Push-Location test\Debug
-      ..\test.ps1
-      Pop-Location
   - ps: |
       Push-Location test\x64\Release
       ..\..\test.ps1
@@ -29,7 +19,7 @@ test_script:
       ..\..\test.ps1
       Pop-Location
 after_test:
-  - 7z a testresults.zip test\Release\test*.* test\Debug\test*.* test\x64\Release\test*.* test\x64\Debug\test*.*
+  - 7z a testresults.zip test\x64\Release\test*.* test\x64\Debug\test*.*
 artifacts:
   - path: '*.nupkg'
   - path: testresults.zip
