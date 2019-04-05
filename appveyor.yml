@@ -6,6 +6,7 @@ build_script:
   - ps: Get-ChildItem . *.nupkg | foreach { & nuget add $_ -Source localfeed }
   - ps: Push-Location test
   - nuget restore -Source "%cd%\..\localfeed"
+  - dir /b /s packages\
   - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
   - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
   - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
