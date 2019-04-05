@@ -29,8 +29,8 @@ fi
 
 NEW_NUGET_VERSION=${NEW_NUGET_VERSION_MAJOR}.${NEW_NUGET_VERSION_MINOR}.0
 
-OLD_GIT_VERSION=`expr "${OLD_VERSION}" : '^[0-9]*-\(.*\)'`
-NEW_GIT_VERSION=`expr "${NEW_VERSION}" : '^[0-9]*-\(.*\)'`
+OLD_GIT_VERSION=`expr "${OLD_VERSION}" : '^[0-9.]*-\(.*\)'`
+NEW_GIT_VERSION=`expr "${NEW_VERSION}" : '^[0-9.]*-\(.*\)'`
 
 echo "$OLD_VERSION -> $NEW_VERSION"
 echo "$OLD_NUGET_VERSION -> $NEW_NUGET_VERSION"
