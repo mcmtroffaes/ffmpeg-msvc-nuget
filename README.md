@@ -1,6 +1,6 @@
 # ffmpeg-msvc-nuget
 
-A nuget package containing headers and libraries for FFmpeg, to make it easier to compile MSVC projects against the official ffmpeg libraries.
+A nuget package containing headers and static LGPL libraries for FFmpeg, to make it easier to compile MSVC projects that use FFmpeg. The scripts for building FFmpeg itself are maintained separately at the [ffmpeg-msvc-build](https://github.com/mcmtroffaes/ffmpeg-msvc-build) project.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/hgm9v7c0jg4galvv?svg=true)](https://ci.appveyor.com/project/mcmtroffaes/ffmpeg-msvc-nuget)
 
