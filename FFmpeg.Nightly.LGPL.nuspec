@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FFmpeg.Nightly.LGPL</id>
-    <version>20190403.0.0</version>
+    <version>20190404.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
@@ -11,17 +11,17 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Headers and libraries for FFmpeg (static LGPL build).</description>
     <summary>Headers and libraries for FFmpeg.</summary>
-    <releaseNotes>See https://git.ffmpeg.org/gitweb/ffmpeg.git/log/ee16d14b for a full list of changes. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget and https://github.com/mcmtroffaes/ffmpeg-msvc-build on GitHub.</releaseNotes>
+    <releaseNotes>See https://git.ffmpeg.org/gitweb/ffmpeg.git/log/8e3b01e2 for a full list of changes. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget and https://github.com/mcmtroffaes/ffmpeg-msvc-build on GitHub.</releaseNotes>
     <tags>ffmpeg media video audio capture encode decode encoding decoding codec native nativepackage</tags>
   </metadata>
   <files>
     <file src="nuget-readme.txt" target="readme.txt" />
     <file src="FFmpeg.Nightly.LGPL.targets" target="build\native" />
-    <file src="ffmpeg-20190403.0.0-ee16d14b-lgpl21-v141-static-md-release-x64\include\**" target="build\native\include" />
-    <file src="ffmpeg-20190403.0.0-ee16d14b-lgpl21-v141-static-md-release-x64\share\doc\**" target="build\native\share\doc" />
-    <file src="ffmpeg-20190403.0.0-ee16d14b-lgpl21-v141-static-md-debug-x86\lib\*.lib" target="build\native\lib\win32\debug" />
-    <file src="ffmpeg-20190403.0.0-ee16d14b-lgpl21-v141-static-md-debug-x64\lib\*.lib" target="build\native\lib\x64\debug" />
-    <file src="ffmpeg-20190403.0.0-ee16d14b-lgpl21-v141-static-md-release-x86\lib\*.lib" target="build\native\lib\win32\release" />
-    <file src="ffmpeg-20190403.0.0-ee16d14b-lgpl21-v141-static-md-release-x64\lib\*.lib" target="build\native\lib\x64\release" />
+    <file src="ffmpeg-20190404.0.0-8e3b01e2-lgpl21-v141-static-md-release-x64\include\**" target="build\native\include" />
+    <file src="ffmpeg-20190404.0.0-8e3b01e2-lgpl21-v141-static-md-release-x64\share\doc\**" target="build\native\share\doc" />
+    <file src="ffmpeg-20190404.0.0-8e3b01e2-lgpl21-v141-static-md-debug-x86\lib\*.lib" target="build\native\lib\win32\debug" />
+    <file src="ffmpeg-20190404.0.0-8e3b01e2-lgpl21-v141-static-md-debug-x64\lib\*.lib" target="build\native\lib\x64\debug" />
+    <file src="ffmpeg-20190404.0.0-8e3b01e2-lgpl21-v141-static-md-release-x86\lib\*.lib" target="build\native\lib\win32\release" />
+    <file src="ffmpeg-20190404.0.0-8e3b01e2-lgpl21-v141-static-md-release-x64\lib\*.lib" target="build\native\lib\x64\release" />
   </files>
 </package>
