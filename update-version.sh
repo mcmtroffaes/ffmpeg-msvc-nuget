@@ -36,8 +36,8 @@ echo "$OLD_VERSION -> $NEW_VERSION"
 echo "$OLD_NUGET_VERSION -> $NEW_NUGET_VERSION"
 echo "$OLD_GIT_VERSION -> $NEW_GIT_VERSION"
 
-find . -type f -exec sed -i "s/$OLD_VERSION/$NEW_VERSION/g" {} \;
-find . -type f -exec sed -i "s/$OLD_NUGET_VERSION/$NEW_NUGET_VERSION/g" {} \;
+find *.nuspec *.ps1 test/ -type f -exec sed -i "s/$OLD_VERSION/$NEW_VERSION/g" {} \;
+find *.nuspec *.ps1 test/ -type f -exec sed -i "s/$OLD_NUGET_VERSION/$NEW_NUGET_VERSION/g" {} \;
 sed -i "s/$OLD_GIT_VERSION/$NEW_GIT_VERSION/g" FFmpeg.Nightly.LGPL.nuspec
 sed -i "s/$OLD_GIT_VERSION/$NEW_GIT_VERSION/g" nuget-readme.txt
 
