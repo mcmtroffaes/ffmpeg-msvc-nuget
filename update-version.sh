@@ -9,6 +9,12 @@ then
   exit 0
 fi
 
+if [ "$NEW_VERSION" == "" ]
+then
+  echo "Failed to get latest version from website."
+  exit 1
+fi
+
 OLD_NUGET_VERSION=`sed -n 's|\s*<version>\(.*\)</version>|\1|p' FFmpeg.Nightly.LGPL.nuspec`
 OLD_NUGET_VERSION_MAJOR=`expr "${OLD_NUGET_VERSION}" : '^\([0-9]*\)[.]'`
 OLD_NUGET_VERSION_MINOR=`expr "${OLD_NUGET_VERSION}" : '^[0-9]*[.]\([0-9]*\)'`
@@ -16,7 +22,7 @@ NEW_NUGET_VERSION_MAJOR=${NEW_VERSION:0:8}
 
 if [ "$OLD_NUGET_VERSION_MAJOR" \> "$NEW_NUGET_VERSION_MAJOR" ]
 then
-    echo "New major version is lower than old version."
+    echo "New major version $NEW_NUGET_VERSION_MAJOR is lower than old version $OLD_NUGET_VERSION_MAJOR."
     exit 1
 fi
 
