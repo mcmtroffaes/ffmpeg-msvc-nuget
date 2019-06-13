@@ -1,4 +1,4 @@
-$ffmpeg = "ffmpeg-20190604.1.0-d81913e6"
+$ffmpeg = "ffmpeg-20190610.0.0-80e68ce1"
 $version = ($ffmpeg -split '-')[1]
 $deb32 = "$ffmpeg-lgpl21-v141-static-md-debug-x86"
 $deb64 = "$ffmpeg-lgpl21-v141-static-md-debug-x64"
