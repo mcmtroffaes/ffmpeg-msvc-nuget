@@ -17,6 +17,6 @@ find a copy of the LGPLv2.1 license which applies to this build
 
 For more information on FFmpeg's license, see:
 
-* https://git.ffmpeg.org/gitweb/ffmpeg.git/blob/43891ea8:/LICENSE.md
+* https://git.ffmpeg.org/gitweb/ffmpeg.git/blob/42a2edcc:/LICENSE.md
 
 * https://ffmpeg.org/legal.html
