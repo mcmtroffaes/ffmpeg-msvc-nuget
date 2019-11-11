@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FFmpeg.Nightly.LGPL</id>
-    <version>20191105.0.0</version>
+    <version>20191110.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
@@ -11,17 +11,17 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Headers and static libraries for FFmpeg (LGPL build).</description>
     <summary>Headers and static libraries for FFmpeg.</summary>
-    <releaseNotes>See https://git.ffmpeg.org/gitweb/ffmpeg.git/log/c54268c for a full list of changes. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget and https://github.com/mcmtroffaes/ffmpeg-msvc-build on GitHub. Note that this package only targets native. In particular, it does not target C#. If you get an error message "You are trying to install this package into a project that targets '.NETFramework,Version=vX.X.X', but the package does not contain any assembly references or content files that are compatible with that framework." then please have a look at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget/tree/master/test for examples of how to use the package.</releaseNotes>
+    <releaseNotes>See https://git.ffmpeg.org/gitweb/ffmpeg.git/log/3a84081 for a full list of changes. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget and https://github.com/mcmtroffaes/ffmpeg-msvc-build on GitHub. Note that this package only targets native. In particular, it does not target C#. If you get an error message "You are trying to install this package into a project that targets '.NETFramework,Version=vX.X.X', but the package does not contain any assembly references or content files that are compatible with that framework." then please have a look at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget/tree/master/test for examples of how to use the package.</releaseNotes>
     <tags>ffmpeg media video audio capture encode decode encoding decoding codec native nativepackage</tags>
   </metadata>
   <files>
     <file src="nuget-readme.txt" target="readme.txt" />
     <file src="FFmpeg.Nightly.LGPL.targets" target="build\native" />
-    <file src="ffmpeg-20191105.0.0-c54268c-lgpl21-v141-static-md-release-x64\include\**" target="build\native\include" />
-    <file src="ffmpeg-20191105.0.0-c54268c-lgpl21-v141-static-md-release-x64\share\doc\**" target="build\native\share\doc" />
-    <file src="ffmpeg-20191105.0.0-c54268c-lgpl21-v141-static-md-debug-x86\lib\*.lib" target="build\native\lib\win32\debug" />
-    <file src="ffmpeg-20191105.0.0-c54268c-lgpl21-v141-static-md-debug-x64\lib\*.lib" target="build\native\lib\x64\debug" />
-    <file src="ffmpeg-20191105.0.0-c54268c-lgpl21-v141-static-md-release-x86\lib\*.lib" target="build\native\lib\win32\release" />
-    <file src="ffmpeg-20191105.0.0-c54268c-lgpl21-v141-static-md-release-x64\lib\*.lib" target="build\native\lib\x64\release" />
+    <file src="ffmpeg-20191110.0.0-3a84081-lgpl21-v141-static-md-release-x64\include\**" target="build\native\include" />
+    <file src="ffmpeg-20191110.0.0-3a84081-lgpl21-v141-static-md-release-x64\share\doc\**" target="build\native\share\doc" />
+    <file src="ffmpeg-20191110.0.0-3a84081-lgpl21-v141-static-md-debug-x86\lib\*.lib" target="build\native\lib\win32\debug" />
+    <file src="ffmpeg-20191110.0.0-3a84081-lgpl21-v141-static-md-debug-x64\lib\*.lib" target="build\native\lib\x64\debug" />
+    <file src="ffmpeg-20191110.0.0-3a84081-lgpl21-v141-static-md-release-x86\lib\*.lib" target="build\native\lib\win32\release" />
+    <file src="ffmpeg-20191110.0.0-3a84081-lgpl21-v141-static-md-release-x64\lib\*.lib" target="build\native\lib\x64\release" />
   </files>
 </package>
