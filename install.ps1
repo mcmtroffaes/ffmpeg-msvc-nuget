@@ -16,13 +16,19 @@ if (!(Test-Path "$rel64.7z")) {
 if (!(Test-Path $rel32)) { 7z x "$env:temp/$rel32.7z" }
 if (!(Test-Path $rel64)) { 7z x "$env:temp/$rel64.7z" }
 
-Get-ChildItem * -Recurse -Include vcpkg_abi_info.txt, *.cmake, pkgconfig, libvpx, zlib, vpx, zconf.h, zlib.h, *.pdb | Remove-Item -Recurse -Verbose
+Get-ChildItem * -Recurse -Include vcpkg_abi_info.txt, *.cmake, pkgconfig, libvpx, zlib, vpx, zconf.h, zlib.h | Remove-Item -Recurse -Verbose
 Rename-Item `
   -Path "$rel32\installed\x86-windows-static-md-v142\debug\lib\vpxmdd.lib" `
   -NewName "vpxmd.lib"
 Rename-Item `
   -Path "$rel64\installed\x64-windows-static-md-v142\debug\lib\vpxmdd.lib" `
   -NewName "vpxmd.lib"
+Rename-Item `
+  -Path "$rel32\installed\x86-windows-static-md-v142\debug\lib\vpxmdd.pdb" `
+  -NewName "vpxmd.pdb"
+Rename-Item `
+  -Path "$rel64\installed\x64-windows-static-md-v142\debug\lib\vpxmdd.pdb" `
+  -NewName "vpxmd.pdb"
 Rename-Item `
   -Path "$rel32\installed\x86-windows-static-md-v142\debug\lib\zlibd.lib" `
   -NewName "zlib.lib"
