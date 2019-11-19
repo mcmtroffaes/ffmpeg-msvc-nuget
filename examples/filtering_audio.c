@@ -28,7 +28,7 @@
  * @example filtering_audio.c
  */
 
-#include <unistd.h>
+#include <io.h>
 
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
