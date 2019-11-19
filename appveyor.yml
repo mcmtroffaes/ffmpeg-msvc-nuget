@@ -30,10 +30,10 @@ test_script:
       ..\..\test.ps1
       Pop-Location
 after_test:
-  - 7z a testresults.zip test\Release\test*.* test\Debug\test*.* test\x64\Release\test*.* test\x64\Debug\test*.*
+  - 7z a testresults.7z test\Release\test*.* test\Debug\test*.* test\x64\Release\test*.* test\x64\Debug\test*.*
 artifacts:
   - path: '*.nupkg'
-  - path: testresults.zip
+  - path: testresults.7z
 deploy:
   provider: NuGet
   api_key:
