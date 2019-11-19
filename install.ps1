@@ -1,9 +1,9 @@
 $ffmpeg = "ffmpeg-20191117.0.0-b741a84"
 $version = ($ffmpeg -split '-')[1]
-$deb32 = "$ffmpeg-lgpl21-v141-static-md-debug-x86"
-$deb64 = "$ffmpeg-lgpl21-v141-static-md-debug-x64"
-$rel32 = "$ffmpeg-lgpl21-v141-static-md-release-x86"
-$rel64 = "$ffmpeg-lgpl21-v141-static-md-release-x64"
+$deb32 = "$ffmpeg-lgpl21-v142-static-md-debug-x86"
+$deb64 = "$ffmpeg-lgpl21-v142-static-md-debug-x64"
+$rel32 = "$ffmpeg-lgpl21-v142-static-md-release-x86"
+$rel64 = "$ffmpeg-lgpl21-v142-static-md-release-x64"
 $wc = New-Object System.Net.WebClient
 
 if (!(Test-Path "$deb32.zip")) { $wc.DownloadFile("https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases/download/$version/$deb32.zip", "$env:temp/$deb32.zip") }
