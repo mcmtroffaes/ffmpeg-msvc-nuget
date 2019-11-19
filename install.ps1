@@ -23,4 +23,10 @@ Rename-Item `
 Rename-Item `
   -Path "$rel64\installed\x64-windows-static-md-v142\debug\lib\vpxmdd.lib" `
   -NewName "vpxmd.lib"
+Rename-Item `
+  -Path "$rel32\installed\x86-windows-static-md-v142\debug\lib\zlibd.lib" `
+  -NewName "zlib.lib"
+Rename-Item `
+  -Path "$rel64\installed\x64-windows-static-md-v142\debug\lib\zlibd.lib" `
+  -NewName "zlib.lib"
 
