@@ -17,11 +17,11 @@
   <files>
     <file src="nuget-readme.txt" target="readme.txt" />
     <file src="FFmpeg.Nightly.LGPL.targets" target="build\native" />
-    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v142-static-md-release-x64\include\**" target="build\native\include" />
-    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v142-static-md-release-x64\share\doc\**" target="build\native\share\doc" />
-    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v142-static-md-debug-x86\lib\*.lib" target="build\native\lib\win32\debug" />
-    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v142-static-md-debug-x64\lib\*.lib" target="build\native\lib\x64\debug" />
-    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v142-static-md-release-x86\lib\*.lib" target="build\native\lib\win32\release" />
-    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v142-static-md-release-x64\lib\*.lib" target="build\native\lib\x64\release" />
+    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v141-static-md-release-x64\include\**" target="build\native\include" />
+    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v141-static-md-release-x64\share\doc\**" target="build\native\share\doc" />
+    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v141-static-md-debug-x86\lib\*.lib" target="build\native\lib\win32\debug" />
+    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v141-static-md-debug-x64\lib\*.lib" target="build\native\lib\x64\debug" />
+    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v141-static-md-release-x86\lib\*.lib" target="build\native\lib\win32\release" />
+    <file src="ffmpeg-20191117.0.0-b741a84-lgpl21-v141-static-md-release-x64\lib\*.lib" target="build\native\lib\x64\release" />
   </files>
 </package>
