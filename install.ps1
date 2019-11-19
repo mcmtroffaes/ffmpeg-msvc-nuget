@@ -9,3 +9,5 @@ if (!(Test-Path "$rel64.7z")) { $wc.DownloadFile("https://github.com/mcmtroffaes
 
 if (!(Test-Path $rel32)) { 7z x "$env:temp/$rel32.7z" }
 if (!(Test-Path $rel64)) { 7z x "$env:temp/$rel64.7z" }
+
+Get-ChildItem * -Recurse -Include vcpkg_abi_info.txt, *.cmake, vpx*.lib, vpx*.pdb, zlib*.lib, pkgconfig, libvpx, zlib, vpx, zconf.h, zlib.h | Remove-Item -Recurse -Verbose
