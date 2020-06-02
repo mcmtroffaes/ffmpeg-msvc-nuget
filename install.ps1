@@ -1,4 +1,4 @@
-$ffmpeg = "ffmpeg-20200527.0.0-8b5ffae"
+$ffmpeg = "ffmpeg-20200601.0.0-dd76226"
 $version = ($ffmpeg -split '-')[1]
 $rel32 = "$ffmpeg-lgpl21-v142-static-md-x86"
 $rel64 = "$ffmpeg-lgpl21-v142-static-md-x64"
