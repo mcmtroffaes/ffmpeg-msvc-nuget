@@ -4,7 +4,7 @@ A nuget package containing headers and static libraries for an LGPL build of FFm
 
 [![Build status](https://ci.appveyor.com/api/projects/status/hgm9v7c0jg4galvv?svg=true)](https://ci.appveyor.com/project/mcmtroffaes/ffmpeg-msvc-nuget)
 
-**I am planning to retire this repository from October 1st 2020 onward, since Visual Studio has nowadays excellent integration with vcpkg. Please use [ffmpeg-msvc-build](https://github.com/mcmtroffaes/ffmpeg-msvc-build) directly, or simply build ffmpeg yourself using vcpkg. If you are interested in maintaining the nuget package, please get in touch.**
+**I am planning to retire this repository from October 1st 2020 onward, since Visual Studio has nowadays excellent integration with vcpkg. Pre-built vcpkg archives are available from [ffmpeg-msvc-build](https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases), or simply build ffmpeg yourself using vcpkg. If you are interested in maintaining the nuget package, please get in touch.**
 
 ## Requirements
 
