@@ -1,6 +1,15 @@
 This nuget package contains headers and libraries for FFmpeg for use
 with Visual Studio.
 
+IMPORTANT NOTICE: I am planning to retire this nuget package from
+October 1st 2020 onward, since Visual Studio has nowadays excellent
+integration with vcpkg. Pre-built vcpkg archives are available from
+
+https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases
+
+or simply build ffmpeg yourself using vcpkg. If you are interested in
+maintaining the nuget package, please get in touch.
+
 FFmpeg is a pure C project, so to use the libraries within your C++
 application you must encompass your FFmpeg includes using extern "C".
 Otherwise, you will experience link errors. For more details, see
