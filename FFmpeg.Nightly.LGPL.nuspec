@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FFmpeg.Nightly.LGPL</id>
-    <version>20200816.0.0</version>
+    <version>20200821.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
@@ -11,17 +11,17 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Headers and static libraries for FFmpeg (LGPL build).</description>
     <summary>Headers and static libraries for FFmpeg.</summary>
-    <releaseNotes>See https://git.ffmpeg.org/gitweb/ffmpeg.git/log/5df9724 for a full list of changes. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget and https://github.com/mcmtroffaes/ffmpeg-msvc-build on GitHub. Note that this package only targets native. In particular, it does not target C#. If you get an error message "You are trying to install this package into a project that targets '.NETFramework,Version=vX.X.X', but the package does not contain any assembly references or content files that are compatible with that framework." then please have a look at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget/tree/master/test for examples of how to use the package. IMPORTANT NOTICE: I am planning to retire this nuget package from October 1st 2020 onward, since Visual Studio has nowadays excellent integration with vcpkg. Pre-built vcpkg archives are available from https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases or simply build ffmpeg yourself using vcpkg. If you are interested in maintaining the nuget package, please get in touch.</releaseNotes>
+    <releaseNotes>See https://git.ffmpeg.org/gitweb/ffmpeg.git/log/412d63f for a full list of changes. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget and https://github.com/mcmtroffaes/ffmpeg-msvc-build on GitHub. Note that this package only targets native. In particular, it does not target C#. If you get an error message "You are trying to install this package into a project that targets '.NETFramework,Version=vX.X.X', but the package does not contain any assembly references or content files that are compatible with that framework." then please have a look at https://github.com/mcmtroffaes/ffmpeg-msvc-nuget/tree/master/test for examples of how to use the package. IMPORTANT NOTICE: I am planning to retire this nuget package from October 1st 2020 onward, since Visual Studio has nowadays excellent integration with vcpkg. Pre-built vcpkg archives are available from https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases or simply build ffmpeg yourself using vcpkg. If you are interested in maintaining the nuget package, please get in touch.</releaseNotes>
     <tags>ffmpeg media video audio capture encode decode encoding decoding codec native nativepackage</tags>
   </metadata>
   <files>
     <file src="nuget-readme.txt" target="readme.txt" />
     <file src="FFmpeg.Nightly.LGPL.targets" target="build\native" />
-    <file src="ffmpeg-20200816.0.0-5df9724-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\include\**" target="build\native\include" />
-    <file src="ffmpeg-20200816.0.0-5df9724-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\share\**" target="build\native\share" />
-    <file src="ffmpeg-20200816.0.0-5df9724-lgpl21-v142-static-md-x86\installed\x86-windows-static-md-v142\debug\lib\**" target="build\native\lib\win32\debug" />
-    <file src="ffmpeg-20200816.0.0-5df9724-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\debug\lib\**" target="build\native\lib\x64\debug" />
-    <file src="ffmpeg-20200816.0.0-5df9724-lgpl21-v142-static-md-x86\installed\x86-windows-static-md-v142\lib\**" target="build\native\lib\win32\release" />
-    <file src="ffmpeg-20200816.0.0-5df9724-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\lib\**" target="build\native\lib\x64\release" />
+    <file src="ffmpeg-20200821.0.0-412d63f-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\include\**" target="build\native\include" />
+    <file src="ffmpeg-20200821.0.0-412d63f-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\share\**" target="build\native\share" />
+    <file src="ffmpeg-20200821.0.0-412d63f-lgpl21-v142-static-md-x86\installed\x86-windows-static-md-v142\debug\lib\**" target="build\native\lib\win32\debug" />
+    <file src="ffmpeg-20200821.0.0-412d63f-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\debug\lib\**" target="build\native\lib\x64\debug" />
+    <file src="ffmpeg-20200821.0.0-412d63f-lgpl21-v142-static-md-x86\installed\x86-windows-static-md-v142\lib\**" target="build\native\lib\win32\release" />
+    <file src="ffmpeg-20200821.0.0-412d63f-lgpl21-v142-static-md-x64\installed\x64-windows-static-md-v142\lib\**" target="build\native\lib\x64\release" />
   </files>
 </package>
