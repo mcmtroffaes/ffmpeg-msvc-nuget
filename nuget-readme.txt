@@ -7,8 +7,7 @@ integration with vcpkg. Pre-built vcpkg archives are available from
 
 https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases
 
-or simply build ffmpeg yourself using vcpkg. If you are interested in
-maintaining the nuget package, please get in touch.
+or simply build ffmpeg yourself using vcpkg.
 
 FFmpeg is a pure C project, so to use the libraries within your C++
 application you must encompass your FFmpeg includes using extern "C".
